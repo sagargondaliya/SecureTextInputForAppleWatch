@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SecureTextInputDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Push" id="3E2-HZ-kPg">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.10980392160000001" green="0.84313725490000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pushToEnterPinController" destination="AgC-eL-Hgc" id="Edi-pp-q61"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-268" y="-41"/>
+        </scene>
+        <!--Enter Pin-->
+        <scene sceneID="m72-yw-Drn">
+            <objects>
+                <controller identifier="EnterPin" title="Enter Pin" hidesWhenLoading="NO" alwaysBounce="YES" id="Rwd-Wm-zlY" customClass="EnterPin" customModule="SecureTextInputDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="152" alignment="left" layout="vertical" id="trr-e9-V3g" userLabel="Main Group">
+                            <items>
+                                <group width="1" height="18" alignment="left" id="8Sw-Bo-iiV" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" text="- - - -" textAlignment="center" id="Eds-RT-iNA">
+                                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="29" alignment="left" id="OLJ-Cc-57L">
+                                    <items>
+                                        <button width="42" height="1" alignment="left" title="1" id="l2s-lA-xOH">
+                                            <connections>
+                                                <action selector="keypadeClicked1" destination="Rwd-Wm-zlY" id="9A3-q0-WKQ"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="center" title="2" id="LuG-Zv-Xpd">
+                                            <connections>
+                                                <action selector="keypadeClicked2" destination="Rwd-Wm-zlY" id="Eqi-ZG-xNp"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="right" title="3" id="398-Q3-6F5">
+                                            <connections>
+                                                <action selector="keypadeClicked3" destination="Rwd-Wm-zlY" id="0Sl-oO-9S6"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="29" alignment="left" id="l1g-fK-d2V">
+                                    <items>
+                                        <button width="42" height="1" alignment="left" title="4" id="GCN-qu-iZG">
+                                            <connections>
+                                                <action selector="keypadeClicked4" destination="Rwd-Wm-zlY" id="ec4-WE-Jqy"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="center" title="5" id="jD4-c1-t3g">
+                                            <connections>
+                                                <action selector="keypadeClicked5" destination="Rwd-Wm-zlY" id="ZPM-rR-HNF"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="right" title="6" id="QWD-XL-bbx">
+                                            <connections>
+                                                <action selector="keypadeClicked6" destination="Rwd-Wm-zlY" id="P7P-xD-Zgz"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="29" alignment="left" id="NkR-Bx-Ba5">
+                                    <items>
+                                        <button width="42" height="1" alignment="left" title="7" id="202-W4-2Os">
+                                            <connections>
+                                                <action selector="keypadeClicked7" destination="Rwd-Wm-zlY" id="kKX-nP-xeA"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="center" title="8" id="p3D-Bq-bPb">
+                                            <connections>
+                                                <action selector="keypadeClicked8" destination="Rwd-Wm-zlY" id="AHa-6f-Has"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="right" title="9" id="vus-rv-4Kf">
+                                            <connections>
+                                                <action selector="keypadeClicked9" destination="Rwd-Wm-zlY" id="bVA-Yf-2aM"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="29" alignment="left" id="VQl-14-rfS">
+                                    <items>
+                                        <button width="42" height="1" alignment="left" title="R" id="VVC-jt-xNS">
+                                            <connections>
+                                                <action selector="keypadeClickedReset" destination="Rwd-Wm-zlY" id="yIn-Vd-edB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="center" title="0" id="Ro0-um-zmW">
+                                            <connections>
+                                                <action selector="keypadeClicked0" destination="Rwd-Wm-zlY" id="lqY-yJ-HC6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="1" alignment="right" title="B" id="Vtv-JG-shO">
+                                            <connections>
+                                                <action selector="keypadeClickedBackSpace" destination="Rwd-Wm-zlY" id="Ixz-ua-Cue"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lblPin" destination="Eds-RT-iNA" id="Ra4-S4-9or"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="22" y="-46.5"/>
+        </scene>
+    </scenes>
+</document>
